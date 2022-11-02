@@ -17,22 +17,14 @@ public class java42 {
         int min = dizi[0], max = dizi[5];
         System.out.println("referans: ");
         int b = input.nextInt();
-        if(b <= dizi[3]){
-            for(int i = 0; i<dizi.length/2; i++){
+
+        for(int i = 0; i<dizi.length; i++){
                 if(dizi[i] >= min && dizi[i] <= b) min = dizi[i];
                 if(dizi[i] <= max && dizi[i] >= b) max = dizi[i];
-            }
-            System.out.println("min: " + min);
-            System.out.println("max: " + max);
         }
-        if(b >= dizi[3]){
-            for(int i = 3; i<dizi.length; i++){
-                if(dizi[i] >= min && dizi[i] <= b) min = dizi[i];
-                if(dizi[i] <= max && dizi[i] >= b) max = dizi[i];
-            }
-            System.out.println("min: " + min);
-            System.out.println("max: " + max);
-        }
+        System.out.println("min: " + min);
+        System.out.println("max: " + max);
+
 
         input.close();
     }
